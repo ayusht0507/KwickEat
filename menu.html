@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KwickEat | Select Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+     <link rel="icon" type="image/x-icon" href="ASSETS/Logo.jpg">
+</head>
+<body>
+  <header>
+    <h1><div>Kwick<span id="eat">Eat</span></div></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html" class="active">Menu</a>
+      <!-- <a href="orders.html">Your Orders</a> -->
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBQ1WF7SvcnuyQrO_KgEocP-nxn5Uw47bo",
+    authDomain: "kwickeat.firebaseapp.com",
+    projectId: "kwickeat",
+    storageBucket: "kwickeat.firebasestorage.app",
+    messagingSenderId: "850395651268",
+    appId: "1:850395651268:web:41a52943ccd29b5aeb7d91",
+    measurementId: "G-0EQ2416HPK"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
+  <main class="shop-selector">
+    <h2><b>Select a Shop to Order From</b></h2>
+    
+    <div class="shop-grid">
+      <div class="shop-column">
+        <a href="nescafe.html" target="_blank" class="shop-card">
+          <h3>☕<b> Nescafe</b></h3>
+          <p>Nescafe serves as a popular hangout spot for students to relax and recharge.</p>
+        </a>
+        <a href="greenchilly.html" target="_blank" class="shop-card">
+          <h3>🌶️<b>Green Chilly</b></h3>
+          <p>GreenChilly is a popular college canteen serving freshly made, budget-friendly Indian meals.</p>
+        </a>
+      </div>
+
+      <div class="shop-column">
+        <a href="hungrynites.html" target="_blank" class="shop-card">
+          <h3>🌙<b>Hungry Nites</b></h3>
+          <p>Hungry Nites is a late-hour food spot on campus offering tasty snacks and meals for night cravings.</p>
+        </a>
+        <a href="bigtreat.html" target="_blank" class="shop-card">
+          <h3>🍔<b>Big Treat</b></h3>
+          <p>Big Treat is a vibrant food spot in our college known for its delicious fast food and lively atmosphere.</p>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer>© 2025 KwickEat</footer>
+</body>
+</html>
